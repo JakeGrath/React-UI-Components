@@ -19,11 +19,27 @@ const App = () => {
       <NumberButton buttonStyle='button' text='5' />
       <NumberButton buttonStyle='button' text='6' />
       <ActionButton buttonStyle='button red' text='-' />
+      <NumberButton buttonStyle='button' text='1' />
+      <NumberButton buttonStyle='button' text='2' />
+      <NumberButton buttonStyle='button' text='3' />
+      <ActionButton buttonStyle='button red' text='+' />
       <NumberButton buttonStyle='button wide clear' text='0' />
       <ActionButton buttonStyle='button red' text='=' />
       </div>
     </div>
   );
 };
+
+const Buttons = document.querySelectorAll('.button');
+console.log(Buttons)
+
+Buttons.forEach(button => {
+    button.addEventListener('click', event => {
+        console.log(button)
+        if (button.textContent === '1'){
+            CalculatorComponentDisplay = 1;
+        }
+    })
+} )
 
 export default App;
