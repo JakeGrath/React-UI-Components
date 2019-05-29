@@ -1,0 +1,13 @@
+.app {
+    width: 452px;
+    height: 594px;
+    border: 1px solid rgb(151,151,151);
+}
+
+.button-container {
+    width: 452px;
+    height: 468px;
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid rgb(151,151,151);
+}
